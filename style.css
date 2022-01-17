@@ -172,7 +172,6 @@ p.marginLeft {
 }
 
 .rectangle {
-    width: 1000px;
     height: 352px;
     border-radius: 316.5px;
     background-color: rgba(82, 103, 223, 1);
@@ -180,11 +179,19 @@ p.marginLeft {
     left: 200px;
 }
 
+.rectangle2 {
+    height: 352px;
+    border-radius: 316.5px;
+    background-color: rgba(82, 103, 223, 1);
+    top: -255px;
+    left: -170px;
+}
+
 .heroImg {
     z-index: 1;
 }
 
-.rectangle, .heroImg {
+.rectangle, .rectangle2, .heroImg {
     position: relative;
 }
 
@@ -305,6 +312,17 @@ h3 {
       font-size: 15px;
     }
     
+.collapsible::after {
+    content: url("images/icon-arrow.svg");
+    float: right;
+}
+
+.collapsible.active:after {
+    content: url("images/icon-arrow.svg");
+    float: right;
+    transform: rotate(180deg); 
+    filter: hue-rotate(99deg);
+}
     
     .content {
       width: 40%;
