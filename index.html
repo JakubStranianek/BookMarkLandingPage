@@ -26,22 +26,25 @@
 
 <body>
 
-  <div class="headerContainer">
-    <div class="header">
-      <img src="images/logo-bookmark.svg" class="headerLogo" alt=" logoMain">
-      <nav>
-        <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
   <div class="container">
-    <div class="one">
+
+    <div class="header">
+      <div class="headerContainer">
+        <div class="header">
+          <img src="images/logo-bookmark.svg" class="headerLogo" alt=" logoMain">
+          <nav>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="main1">
       <h1 class="marginLeft">A Simple Bookmark Manager</h1>
       <p class="marginLeft">
         A clean and simple interface to organize your favourite websites. Open a new
@@ -57,75 +60,141 @@
       </button>
     </div>
 
-    <div class="two">
+    <div class="main2">
       <img src="images/illustration-hero.svg" class="heroImg" alt="mainPart1">
-      <div class="rectangle"></div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="three">
+    <div class="features">
+      <div class="flexxer">
         <h2>Features</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, illo nihil adipisci soluta ab dolorem doloribus earum ipsam ullam et reprehenderit sint deleniti porro ratione? Ipsam repellendus quisquam maiores. Quasi.
+          Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.
         </p>
+      </div>
+
+      <ul>
+        <li><a href="#" class="border-bottom">Simple Bookmarking</a></li>
+        <li><a href="#" class="border-bottom">Speedy Searching</a></li>
+        <li><a href="#" class="border-bottom">Easy Sharing</a></li>
+      </ul>
+    </div>
+
+    <div class="bookmark1">
+      <img src="images/illustration-features-tab-1.svg" class="heroImg marginLeft" alt="mainPart1">
+    </div>
+
+    <div class="bookmark2">
+
+      <h1>Bookmark in one click</h1>
+      <div class="wrapper">
+        <p>
+          Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.
+        </p>
+
+        <button class="btn btn-Chrome">
+          More Info
+        </button>
+      </div>
+    </div>
+
+    <div class="download flexxer">
+      <h2>Download the extension</h2>
+
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+
+      <div class="listContainer">
+        <div class="list list1">
+          <img src="images/logo-chrome.svg" alt="chrome">
+          <h3>Add to Chrome</h3>
+          <p>Minimum version 62</p>
+          <hr style="border-top: dotted 7px; width: 100%; color: lightgray; border-bottom: none; margin-top: 30px;" />
+          <button class="btn-Install">
+            Add & Install Extension
+          </button>
+        </div>
+
+        <div class="list list2">
+          <img src="images/logo-firefox.svg" alt="mozila">
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+          <hr style="border-top: dotted 7px; width: 100%; color: lightgray; border-bottom: none; margin-top: 30px;" />
+          <button class="btn-Install">
+            Add & Install Extension
+          </button>
+        </div>
+
+        <div class="list list3">
+          <img src="images/logo-opera.svg" alt="opera">
+          <h3>Add to Opera</h3>
+          <p>Minimum version 46</p>
+          <hr style="border-top: dotted 7px; width: 100%; color: lightgray; border-bottom: none; margin-top: 30px;" />
+          <button class="btn-Install">
+            Add & Install Extension
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ask flexxer">
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.
+      </p>
+
+      <hr style="border-top: 1px solid lightgrey; width: 100%; border-bottom: none; width: 50%;" />
+
+      <button type="button" class="collapsible">What is Bookmark?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
+
+      <hr style="border-top: 1px solid lightgrey; width: 100%; border-bottom: none; width: 50%;" />
+
+      <button type="button" class="collapsible">How can I request a new browser?</button>
+      <div class="content">
+        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </div>
+
+      <hr style="border-top: 1px solid lightgrey; width: 100%; border-bottom: none; width: 50%;" />
+      <button type="button" class="collapsible">Is there a mobile app?</button>
+      <div class="content">
+        <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+          sollicitudin ex et ultricies bibendum.</p>
+      </div>
+
+      <hr style="border-top: 1px solid lightgrey; width: 100%; border-bottom: none; width: 50%;" />
+      <button type="button" class="collapsible">What about other Chromium browsers?</button>
+      <div class="content">
+        <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+          vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      </div>
+
+      <hr style="border-top: 1px solid lightgrey; width: 100%; border-bottom: none; width: 50%;" />
+
+    </div>
+
+    <div class="prefooter">
+
+    </div>
+
+    <div class="footer">
+
     </div>
 
   </div>
 
-      
-  <!-- 
-
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
-
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
+  <!--
   What is Bookmark?
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 

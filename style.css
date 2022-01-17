@@ -26,9 +26,9 @@ body {
     height: 25px;
 }
 
-ul {
+nav:nth-child(2) > ul:nth-child(1) {
     display: flex;
-align-items: center;
+    align-items: center;
 }
 
 ul > li {
@@ -46,7 +46,7 @@ li > a {
     letter-spacing: 1.5px;
 }
 
-li:last-child {
+nav:nth-child(2) > ul:nth-child(1) > li:nth-child(4) {
     width: 111.4px;
     height: 40px;
     background-color: #FA5959;
@@ -58,38 +58,50 @@ li:last-child {
     box-shadow: -3px 6px 10px lightgray;
 }
 
-li:last-child > a {
+li:nth-child(4) > a:nth-child(1) {
     color: #FFFFFF;
     font-weight: 501;
 }
 
 /* FIRST MAIN CONTENT PART */
 
-body > div:nth-child(2) {
-    margin-top: 72px;
-}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
+    gap: 30px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "main1 main2"
+      "features features"
+      "bookmark1 bookmark2"
+      "download download"
+      "ask ask"
+      "prefooter prefooter"
+      "footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .main1 { grid-area: main1; }
+  
+  .main2 { grid-area: main2; }
+  
+  .features { grid-area: features; }
+  
+  .bookmark1 { grid-area: bookmark1; }
+  
+  .bookmark2 { grid-area: bookmark2; }
+  
+  .download { grid-area: download; }
+  
+  .ask { grid-area: ask; }
+  
+  .prefooter { grid-area: prefooter; }
+  
+  .footer { grid-area: footer; }
 
-.container {
-    width: 100%;
-    height: 1780px;
-    border: 1px solid red;
-    height: 578px;
-}
-
-.one {
-    width: 50%;
-    float: left;
-}
-
-.two {
-    width: 50%;
-    float: right;
-}
-
-.three {
-    width: 100%;
-}
-
+  
 h1 {
     font-size: 48px;
     color: #242A45;
@@ -101,15 +113,18 @@ h1 {
     margin-left: 166px;
 }
 
-li > a, h1, p {
+li > a, h1, p, h2, h3 {
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    width: 65%;
     font-size: 18px;
     line-height: 28px;
     color: rgba(36, 42, 69, 50%);
+}
+
+p.marginLeft {
+    width: 65%;
 }
 
 .btn {
@@ -131,6 +146,16 @@ p {
     box-shadow: -1px 5px 10px lightgray;
 }
 
+.btn-Install {
+    width: 232px;
+    height: 48px;
+    background-color:rgba(82, 103, 223, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 30px;
+}
+
 .rectangle {
     width: 1000px;
     height: 352px;
@@ -147,3 +172,121 @@ p {
 .rectangle, .heroImg {
     position: relative;
 }
+
+/* SECOND MAIN CONTENT PART */
+.flexxer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: #242A45;
+}
+
+.flexxer > p:nth-child(2) {
+    width: 36%;
+    text-align: center;
+    line-height: 28px;
+}
+
+ul:nth-child(2) {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.features > ul:nth-child(2) > li {
+    margin-right: 90px;
+}
+
+.features > ul:nth-child(2) > li > a {
+    font-size: 17px; 
+    text-transform: none;
+}
+
+.border-bottom {
+    line-height: 100px;
+}
+
+.border-bottom:hover {
+    border-bottom: 3px solid #FA5959;
+}
+
+
+.bookmark2 > h1, .wrapper {
+    margin-left: 40px;
+}
+
+.wrapper {
+    width: 60%;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+    margin-top: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 370px;
+    box-shadow: 0px 6px 14px lightgray;
+}
+
+.list > img {
+    margin-top: 40px;
+}
+
+
+.list > p ,
+h3  {
+    margin: 0;
+}
+
+h3 {
+    color: #242A45;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.list > p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.list2 {
+    margin-top: 40px;
+} 
+
+.list3 {
+    margin-top: 80px;
+} 
+
+.collapsible {
+    background-color: white;
+      color: #242A45;
+      cursor: pointer;
+      padding: 18px;
+      width: 50%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      backgroud-color: white;
+    }
