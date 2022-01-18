@@ -41,6 +41,7 @@
               <li><a href="#">Login</a></li>
             </ul>
           </nav>
+          <a href="#" class="toggleButton"><img src="images/icon-hamburger.svg" alt=""></a>
         </div>
       </div>
     </div>
@@ -76,22 +77,22 @@
       </div>
 
       <ul>
-        <li><a href="#" class="border-bottom">Simple Bookmarking</a></li>
-        <li><a href="#" class="border-bottom">Speedy Searching</a></li>
-        <li><a href="#" class="border-bottom">Easy Sharing</a></li>
+        <li><a href="#" class="border-bottom" onclick="changeOne(); return false;">Simple Bookmarking</a></li>
+        <li><a href="#" class="border-bottom" onclick="changeTwo(); return false;">Speedy Searching</a></li>
+        <li><a href="#" class="border-bottom" onclick="changeThree(); return false;">Easy Sharing</a></li>
       </ul>
     </div>
 
     <div class="bookmark1">
-      <img src="images/illustration-features-tab-1.svg" class="heroImg marginLeft" alt="mainPart1">
+      <img src="images/illustration-features-tab-1.svg" id="myImage" class="heroImg marginLeft" alt="mainPart">
       <div class="rectangle2"></div>
     </div>
 
     <div class="bookmark2">
 
-      <h1>Bookmark in one click</h1>
+      <h1 id="changeHeading">Bookmark in one click</h1>
       <div class="wrapper">
-        <p>
+        <p id="changePar">
           Organize your bookmarks however you like. Our simple drag-and-drop interface
           gives you complete control over how you manage your favourite sites.
         </p>
@@ -115,7 +116,7 @@
           <img src="images/logo-chrome.svg" alt="chrome">
           <h3>Add to Chrome</h3>
           <p>Minimum version 62</p>
-          <hr style="border-top: dotted 7px; width: 100%; color: lightgray; border-bottom: none; margin-top: 30px;" />
+          <img src="images/bg-dots.svg" alt="">
           <button class="btn-Install">
             Add & Install Extension
           </button>
@@ -125,7 +126,7 @@
           <img src="images/logo-firefox.svg" alt="mozila">
           <h3>Add to Firefox</h3>
           <p>Minimum version 55</p>
-          <hr style="border-top: dotted 7px; width: 100%; color: lightgray; border-bottom: none; margin-top: 30px;" />
+          <img src="images/bg-dots.svg" alt="">
           <button class="btn-Install">
             Add & Install Extension
           </button>
@@ -135,7 +136,7 @@
           <img src="images/logo-opera.svg" alt="opera">
           <h3>Add to Opera</h3>
           <p>Minimum version 46</p>
-          <hr style="border-top: dotted 7px; width: 100%; color: lightgray; border-bottom: none; margin-top: 30px;" />
+          <img src="images/bg-dots.svg" alt="">
           <button class="btn-Install">
             Add & Install Extension
           </button>
@@ -200,8 +201,8 @@
       </div>
 
       <div class="flexxer">
-        <input type="mail" class="mail" placeholder="       Enter your mail adress">
-        <button class="contact">Contact Us</button>
+          <input type="mail" name="mail" class="mail" id="mail" placeholder="Enter your mail adress..">
+        <button type="button" class="contact" id="mailButton" onclick="checkMail()">Contact Us</button>
       </div>
     </div>
 
@@ -222,13 +223,12 @@
       <div class="flexxer">
 
         <div class="icons">
-          <img src="images/icon-facebook.svg" alt="fb">
-          <img src="images/icon-twitter.svg" alt="tw">
+          <a href="#"><img src="images/icon-facebook.svg" alt="fb"></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt="tw"></a>
         </div>
       </div>
     </div>
   </div>
-
 
   <script type="text/javascript" src="script.js"></script>
 

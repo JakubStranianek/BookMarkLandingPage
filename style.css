@@ -1,9 +1,16 @@
 /* NAVBAR PART */
+:root {
+    --blue: #5267DF;
+    --darkBlue: #242A45;
+    --red: #FA5959;
+    --grey: #9194A2;
+}
 
 body {
     margin: 0;
     min-height: 100%;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .headerContainer {
@@ -12,13 +19,17 @@ body {
 }
 
 .headerH {
-    width: 1108px;
+    width: 77%;
     height: 46px;
     display:flex;
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
+}
+
+.toggleButton {
+    display: none;
 }
 
 .headerLogo {
@@ -40,23 +51,37 @@ li {
 
 li > a {
     text-decoration: none;
-    color: #242A45;
+    color: var(--darkBlue);
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 1.5px;
 }
 
+li > a:hover {
+    color: var(--red);
+}
+
 nav:nth-child(2) > ul:nth-child(1) > li:nth-child(4) {
     width: 111.4px;
     height: 40px;
-    background-color: #FA5959;
+    background-color: var(--red);
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     font-weight: 500; 
     border-radius: 5px;
-    box-shadow: -3px 6px 10px lightgray;
+    box-shadow: -3px 6px 10px var(--grey);
 }
+
+nav:nth-child(2) > ul:nth-child(1) > li:nth-child(4):hover {
+    color: var(--red);
+    border: 2px solid var(--red);
+    background-color: #FFFFFF;
+}
+
+nav:nth-child(2) > ul:nth-child(1) > li:nth-child(4) > a:hover {
+    color: var(--red);
+} 
 
 li:nth-child(4) > a:nth-child(1) {
     color: #FFFFFF;
@@ -98,19 +123,19 @@ li:nth-child(4) > a:nth-child(1) {
   .ask { grid-area: ask; }
   
   .prefooter { grid-area: prefooter;
-background-color: #5267DF; }
+background-color: var(--blue) }
   
   .footer { grid-area: footer;
-background-color: #242A45; }
+background-color: var(--darkBlue) }
 
 .footer1 { grid-area: footer1;
-    background-color: #242A45; }
+    background-color: var(--darkBlue); }
     
 
   
 h1 {
     font-size: 48px;
-    color: #242A45;
+    color: var(--darkBlue);
     margin-top: 70px;
     font-weight: 501; 
 }
@@ -126,7 +151,7 @@ li > a, h1, p, h2, h3, h4 {
 p {
     font-size: 18px;
     line-height: 28px;
-    color: rgba(36, 42, 69, 50%);
+    color: var(--grey);;
 }
 
 p.marginLeft {
@@ -141,40 +166,64 @@ p.marginLeft {
 }
 
 .btn-Chrome{
-    background-color:rgba(82, 103, 223, 1);
+    background-color:var(--blue);
     color: rgba(255, 255, 255, 1);
 }
 
+.btn-Chrome:hover {
+    background-color:#FFFFFF;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
 .btn-Firefox {
-    background-color: rgba(73, 93, 207, 0,2);
-    color: rgba(36, 42, 69, 1);
+    background-color: #FFFFFF;
+    color: var(--darkBlue);
     margin-left: 15px;
-    box-shadow: -1px 5px 10px lightgray;
+    box-shadow: -1px 5px 10px var(--grey);
+}
+
+.btn-Firefox:hover {
+    background-color: #FFFFFF;
+    color: var(--grey);
+    border: 2px solid var(--grey);
 }
 
 .btn-Install {
     width: 232px;
     height: 48px;
-    background-color:rgba(82, 103, 223, 1);
+    background-color: var(--blue);
     color: rgba(255, 255, 255, 1);
     border-radius: 5px;
     border-style: none;
     margin-top: 30px;
 }
 
+.btn-Install:hover {
+    background-color:#FFFFFF;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
 .contact {
     width: 126px;
     height: 48px;
-    background-color: #FA5959;
+    background-color: var(--red);
     color: rgba(255, 255, 255, 1);
     border-radius: 5px;
     border-style: none;
 }
 
+.contact:hover {
+    background-color: #FFFFFF;
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
 .rectangle {
     height: 352px;
     border-radius: 316.5px;
-    background-color: rgba(82, 103, 223, 1);
+    background-color: var(--blue);
     top: -320px;
     left: 200px;
 }
@@ -182,7 +231,7 @@ p.marginLeft {
 .rectangle2 {
     height: 352px;
     border-radius: 316.5px;
-    background-color: rgba(82, 103, 223, 1);
+    background-color: var(--blue);
     top: -255px;
     left: -170px;
 }
@@ -190,6 +239,7 @@ p.marginLeft {
 .heroImg {
     z-index: 1;
 }
+
 
 .rectangle, .rectangle2, .heroImg {
     position: relative;
@@ -204,7 +254,7 @@ p.marginLeft {
 
 h2 {
     font-size: 32px;
-    color: #242A45;
+    color: var(--darkBlue);
 }
 
 .flexxer > p:nth-child(2) {
@@ -219,7 +269,7 @@ ul:nth-child(2) {
     justify-content: center;
     margin: auto;
     padding: 0;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid var(--grey);
 }
 
 .features > ul:nth-child(2) > li {
@@ -236,7 +286,7 @@ ul:nth-child(2) {
 }
 
 .border-bottom:hover {
-    border-bottom: 3px solid #FA5959;
+    border-bottom: 3px solid var(--red);
 }
 
 
@@ -261,7 +311,7 @@ ul:nth-child(2) {
     align-items: center;
     width: 280px;
     height: 370px;
-    box-shadow: 0px 6px 14px lightgray;
+    box-shadow: 0px 6px 14px var(--grey);
 }
 
 .list > img {
@@ -275,7 +325,7 @@ h3  {
 }
 
 h3 {
-    color: #242A45;
+    color: var(--darkBlue);
     margin-top: 30px;
     font-size: 20px;
 }
@@ -294,7 +344,7 @@ h3 {
 } 
 
 .ask-hr {
-    border-top: 1px solid lightgrey; 
+    border-top: 1px solid var(--grey); 
     width: 100%; 
     border-bottom: none;
     width: 40%;
@@ -302,7 +352,7 @@ h3 {
 
 .collapsible {
     background-color: white;
-      color: #242A45;
+      color: var(--darkBlue);
       cursor: pointer;
       padding: 18px;
       width: 40%;
@@ -312,6 +362,10 @@ h3 {
       font-size: 15px;
     }
     
+.collapsible:hover {
+    color: var(--red);
+}
+
 .collapsible::after {
     content: url("images/icon-arrow.svg");
     float: right;
@@ -340,7 +394,7 @@ h3 {
 .btn-more {
     width: 114px;
     height: 48px;
-    background-color:rgba(82, 103, 223, 1);
+    background-color: var(--blue);
     color: rgba(255, 255, 255, 1);
     border-radius: 5px;
     border-style: none;
@@ -405,6 +459,31 @@ div.flexxer:nth-child(2) {
     width: 35%;
 }
 
-.icons > img {
+.icons > a {
     margin-right: 30px;
 }
+
+.footer > .flexFoot > nav > ul > li > a:hover {
+    color: var(--red);
+}
+
+.icons > a:hover {
+    filter: invert(30%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-70deg) saturate(900%) contrast(3);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .headerH {
+        margin: 0;
+    }
+    nav:nth-child(2) > ul:nth-child(1) {
+        display: none;
+    }
+
+    .toggleButton {
+        display: flex;
+    }
+}
+
+
