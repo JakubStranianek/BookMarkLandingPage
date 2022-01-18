@@ -471,12 +471,114 @@ div.flexxer:nth-child(2) {
     filter: invert(30%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-70deg) saturate(900%) contrast(3);
 }
 
+.buttonWrap {
+    width: 96%;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
+    .container { 
+       grid-template-rows: 140px 550px 340px 550px 550px 350px 1550px 1000px 450px 100px; 
+    }
+
+    .header, .main2, .main1, .features, .bookmark1, .bookmark2, .download, .ask, .prefooter {
+        grid-column: 1/3;
+    }
+
+    .header {
+        grid-row: 1/2;
+    }
+
+    .main2 {   
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rectangle {
+       display: none;
+    }
+
+    .main1 {
+        grid-row: 3 / 4;
+    }
+    
+    .features {
+        grid-row: 4 / 5;
+    }
+
+    .bookmark1 {
+        grid-row: 5 / 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bookmark2 {
+        grid-row: 6 / 7;
+    }
+
+    .download {
+        grid-row: 7 / 8;
+    }
+
+    .listContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ask {
+        grid-row: 8/9;
+    }
+
+    .prefooter {
+        grid-row: 9/10;
+    }
+
+    .footer {
+        grid-row: 10/11;
+        grid-column: 1/2;
+    }
+
+    .footer1 {
+        grid-row: 10/11;
+        grid-column: 2/3;
+    }
+
+    .headerLogo {
+        margin-left: 40px;
+    }
+
     .headerH {
         margin: 0;
+        width: 95%;
     }
+
+    .marginLeft {
+        margin-left: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .buttonWrap {
+        width: 100%;
+    }
+
+    p.marginLeft {
+        width: auto;
+    }
+
     nav:nth-child(2) > ul:nth-child(1) {
         display: none;
     }
@@ -484,6 +586,41 @@ div.flexxer:nth-child(2) {
     .toggleButton {
         display: flex;
     }
+
+    .flexxer > p:nth-child(2) {
+        width: 50%;
+    }
+
+    ul:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #changeHeading {
+        margin-top: 40px;
+    }
+
+    .wrapper {
+        display: flex;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prefooter > .flexxer:nth-child(1) {
+        width: 80%;
+    }
+
+    div.flexxer:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .contact {
+        margin-top: 15px;
+        width: 300px;
+    }
+
 }
 
 
