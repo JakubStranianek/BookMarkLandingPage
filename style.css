@@ -481,7 +481,7 @@ div.flexxer:nth-child(2) {
 
 @media only screen and (max-width: 1200px) {
     .container { 
-       grid-template-rows: 140px 550px 340px 550px 550px 350px 1550px 1000px 450px 100px; 
+       grid-template-rows: 140px 550px 400px 550px 550px 350px 1550px 1000px 450px 100px; 
     }
 
     .header, .main2, .main1, .features, .bookmark1, .bookmark2, .download, .ask, .prefooter {
@@ -573,10 +573,12 @@ div.flexxer:nth-child(2) {
 
     .buttonWrap {
         width: 100%;
+        margin-top: 40px;
     }
 
     p.marginLeft {
-        width: auto;
+        width: 80%;
+        margin: auto;
     }
 
     nav:nth-child(2) > ul:nth-child(1) {
@@ -621,6 +623,9 @@ div.flexxer:nth-child(2) {
         width: 300px;
     }
 
+    .collapsible, .ask-hr {
+        width: 70%;
+    }
 }
 
 
